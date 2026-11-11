@@ -64,34 +64,6 @@ not mathematically prove that the loop is infinite.
 The prototype does not support every Python language construct
 or every possible program structure.
 
-## Project Structure
-
-Infinite_Loop_Detection_System/
-|
-|-- dataset/
-|   |-- complete_dataset.csv
-|   |-- development_dataset.csv
-|   |-- independent_test_dataset.csv
-|
-|-- results/
-|   |-- loop_features.csv
-|   |-- development_predictions.csv
-|   |-- development_prediction_comparison.csv
-|   |-- independent_test_predictions.csv
-|   |-- independent_test_metrics.csv
-|   |-- development_vs_test_metrics.csv
-|
-|-- graphs/
-|   |-- classification_distribution.png
-|   |-- performance_metrics.png
-|   |-- prediction_results.png
-|   |-- confusion_matrix.png
-|   |-- development_vs_test_comparison.png
-|   |-- independent_test_confusion_matrix.png
-|
-|-- README.md
-|-- requirements.txt
-
 ## Libraries
 
 - pandas

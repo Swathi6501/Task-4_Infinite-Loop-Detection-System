@@ -1,0 +1,26 @@
+Program ID,Program Name,Expected Result,Predicted Result
+1,Infinite While Loop,Non-Terminating,Non-Terminating
+2,Finite While Loop,Terminating,Terminating
+3,Infinite Counter Loop,Non-Terminating,Non-Terminating
+4,For Loop,Terminating,Terminating
+5,False While Condition,Terminating,Terminating
+6,Infinite Constant Loop,Non-Terminating,Non-Terminating
+7,Countdown Loop,Terminating,Terminating
+8,Loop With Break,Terminating,Terminating
+9,Infinite Loop With Continue,Non-Terminating,Non-Terminating
+10,Empty Range Loop,Terminating,Terminating
+11,Increment Until Limit,Terminating,Terminating
+12,Unchanging Condition Variable,Non-Terminating,Non-Terminating
+13,Negative Countdown,Terminating,Terminating
+14,Infinite Negative Counter,Non-Terminating,Non-Terminating
+15,Conditional Break,Terminating,Terminating
+16,Finite Continue Loop,Terminating,Terminating
+17,Nested Finite Loops,Terminating,Terminating
+18,Infinite Nested Loop,Non-Terminating,Non-Terminating
+19,Variable Set to Zero,Terminating,Terminating
+20,Variable Repeatedly Increased,Non-Terminating,Non-Terminating
+21,Finite Equality Loop,Terminating,Terminating
+22,Infinite Equality Loop,Non-Terminating,Non-Terminating
+23,Zero Iteration While Loop,Terminating,Terminating
+24,Finite For Loop With Break,Terminating,Terminating
+25,Constant False Loop,Terminating,Terminating

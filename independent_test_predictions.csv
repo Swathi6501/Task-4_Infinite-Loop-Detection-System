@@ -1,0 +1,114 @@
+test_id,program_name,code,expected_result,predicted_result,detection_reason
+1,Test Increment Loop,"x = 0
+while x < 6:
+    x += 1",Terminating,Terminating,Loop condition became false
+2,Test Countdown by Two,"x = 10
+while x > 0:
+    x -= 2",Terminating,Terminating,Loop condition became false
+3,Test Positive Infinite Counter,"x = 1
+while x > 0:
+    x += 2",Non-Terminating,Non-Terminating,Iteration safety limit reached
+4,Test Zero Iteration,"x = 5
+while x < 0:
+    x += 1",Terminating,Terminating,Loop condition became false
+5,Test Equality Countdown,"x = 3
+while x != 0:
+    x -= 1",Terminating,Terminating,Loop condition became false
+6,Test Increasing Equality Loop,"x = 2
+while x >= 2:
+    x += 1",Non-Terminating,Non-Terminating,Iteration safety limit reached
+7,Test Multiplication Loop,"x = 1
+while x < 8:
+    x *= 2",Terminating,Terminating,Loop condition became false
+8,Test Constant Multiplication,"x = 1
+while x < 8:
+    x *= 1",Non-Terminating,Non-Terminating,Iteration safety limit reached
+9,Test Decrement Until Limit,"x = 10
+while x > 3:
+    x -= 3",Terminating,Terminating,Loop condition became false
+10,Test Increment by Three,"x = 0
+while x < 10:
+    x += 3",Terminating,Terminating,Loop condition became false
+11,Test Direct Variable Reset,"x = 5
+while x > 0:
+    x = 0",Terminating,Terminating,Loop condition became false
+12,Test Conditional Break,"x = 0
+while x < 5:
+    if x == 3:
+        break
+    x += 1",Terminating,Terminating,Break statement executed
+13,Test Break After Increment,"x = 0
+while x < 5:
+    x += 1
+    if x == 3:
+        break",Terminating,Terminating,Break statement executed
+14,Test Conditional Branch Break,"x = 0
+while x < 5:
+    if x < 3:
+        x += 1
+    else:
+        break",Terminating,Terminating,Break statement executed
+15,Test Counter With Break,"x = 1
+while x > 0:
+    if x == 3:
+        break
+    x += 1",Terminating,Terminating,Break statement executed
+16,Test Repeating Variable Cycle,"x = 1
+while x > 0:
+    if x == 3:
+        x = 1
+    x += 1",Non-Terminating,Non-Terminating,Iteration safety limit reached
+17,Test Continue With Increment,"x = 0
+while x < 4:
+    x += 1
+    continue",Terminating,Terminating,Loop condition became false
+18,Test Continue Without Update,"x = 1
+while x > 0:
+    continue",Non-Terminating,Non-Terminating,Iteration safety limit reached
+19,Test Conditional Decrement,"x = 5
+while x > 0:
+    if x > 2:
+        x -= 1
+    else:
+        x = 0",Terminating,Terminating,Loop condition became false
+20,Test Conditional Continue,"x = 0
+while x < 10:
+    if x == 4:
+        x += 1
+        continue
+    x += 2",Terminating,Terminating,Loop condition became false
+21,Test Odd Increment,"x = 1
+while x < 10:
+    x += 2",Terminating,Terminating,Loop condition became false
+22,Test Zero Decrement,"x = 1
+while x > 0:
+    x -= 0",Non-Terminating,Non-Terminating,Iteration safety limit reached
+23,Test Less Than Equal Loop,"x = 0
+while x <= 5:
+    x += 1",Terminating,Terminating,Loop condition became false
+24,Test Nonnegative Infinite Loop,"x = 0
+while x >= 0:
+    x += 1",Non-Terminating,Non-Terminating,Iteration safety limit reached
+25,Test Equality Decrement,"x = 10
+while x != 4:
+    x -= 2",Terminating,Terminating,Loop condition became false
+26,Test Equality Increment,"x = 0
+while x != 5:
+    x += 1",Terminating,Terminating,Loop condition became false
+27,Test Constant Variable Loop,"x = 5
+while x > 0:
+    x += 0",Non-Terminating,Non-Terminating,Iteration safety limit reached
+28,Test Small Finite Loop,"x = 0
+while x < 3:
+    x += 1",Terminating,Terminating,Loop condition became false
+29,Test Conditional Exit,"x = 2
+while x > 0:
+    if x == 1:
+        break
+    x -= 1",Terminating,Terminating,Break statement executed
+30,Test Conditional Countdown,"x = 2
+while x > 0:
+    if x == 2:
+        x -= 1
+    else:
+        x -= 1",Terminating,Terminating,Loop condition became false

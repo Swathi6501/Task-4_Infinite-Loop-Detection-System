@@ -1,0 +1,28 @@
+Program ID,Program Name,Loop Type,Condition,Modified Variables,Control Statements,Detection Result,Detection Reason
+1,Infinite While Loop,While,True,None,None,Infinite,Constant true condition
+2,Finite While Loop,While,i < 5,i Add,None,Finite,Loop condition became false
+3,Infinite Counter Loop,While,x > 0,x Add,None,Likely Infinite,Iteration safety limit reached
+4,For Loop,For,range(5),i,For-loop control,Finite,Bounded for loop
+5,False While Condition,While,False,None,None,Finite,Condition is always false
+6,Infinite Constant Loop,While,1,None,None,Infinite,Constant true condition
+7,Countdown Loop,While,i > 0,i Sub,None,Finite,Loop condition became false
+8,Loop With Break,While,True,None,break,Finite,Break statement can terminate loop
+9,Infinite Loop With Continue,While,True,None,continue,Infinite,Constant true condition
+10,Empty Range Loop,For,range(0),i,For-loop control,Finite,Bounded for loop
+11,Increment Until Limit,While,x < 10,x Add,None,Finite,Loop condition became false
+12,Unchanging Condition Variable,While,x > 0,None,None,Infinite,Condition variable is never modified
+13,Negative Countdown,While,x > -5,x Sub,None,Finite,Loop condition became false
+14,Infinite Negative Counter,While,x < 0,x Sub,None,Infinite,Variable moves away from termination
+15,Conditional Break,While,True,i Add,break,Finite,Break statement can terminate loop
+16,Finite Continue Loop,While,i < 5,i Add,continue,Finite,Loop condition became false
+17,Nested Finite Loops,For,range(3),i,For-loop control,Finite,Bounded for loop
+17,Nested Finite Loops,For,range(2),j,For-loop control,Finite,Bounded for loop
+18,Infinite Nested Loop,While,True,None,None,Infinite,Constant true condition
+18,Infinite Nested Loop,For,range(3),i,For-loop control,Finite,Bounded for loop
+19,Variable Set to Zero,While,x > 0,x = ...,None,Finite,Loop condition became false
+20,Variable Repeatedly Increased,While,x >= 2,x Add,None,Likely Infinite,Iteration safety limit reached
+21,Finite Equality Loop,While,x != 0,x Sub,None,Finite,Loop condition became false
+22,Infinite Equality Loop,While,x != 0,x Add,None,Infinite,Variable moves away from termination
+23,Zero Iteration While Loop,While,x < 5,x Add,None,Finite,Loop condition became false
+24,Finite For Loop With Break,For,range(10),i,For-loop control,Finite,Bounded for loop
+25,Constant False Loop,While,0,None,None,Finite,Condition is always false

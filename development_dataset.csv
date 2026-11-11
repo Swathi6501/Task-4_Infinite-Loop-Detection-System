@@ -1,0 +1,71 @@
+program_id,program_name,code,expected_result,dataset_split
+1,Infinite While Loop,"while True:
+    print('Running')",Non-Terminating,Development
+2,Finite While Loop,"i = 0
+while i < 5:
+    i += 1",Terminating,Development
+3,Infinite Counter Loop,"x = 1
+while x > 0:
+    x += 1",Non-Terminating,Development
+4,For Loop,"for i in range(5):
+    print(i)",Terminating,Development
+5,False While Condition,"while False:
+    print('Hello')",Terminating,Development
+6,Infinite Constant Loop,"while 1:
+    print('Running')",Non-Terminating,Development
+7,Countdown Loop,"i = 10
+while i > 0:
+    i -= 1",Terminating,Development
+8,Loop With Break,"while True:
+    break",Terminating,Development
+9,Infinite Loop With Continue,"while True:
+    continue",Non-Terminating,Development
+10,Empty Range Loop,"for i in range(0):
+    print(i)",Terminating,Development
+11,Increment Until Limit,"x = 1
+while x < 10:
+    x += 2",Terminating,Development
+12,Unchanging Condition Variable,"x = 5
+while x > 0:
+    print(x)",Non-Terminating,Development
+13,Negative Countdown,"x = 0
+while x > -5:
+    x -= 1",Terminating,Development
+14,Infinite Negative Counter,"x = -1
+while x < 0:
+    x -= 1",Non-Terminating,Development
+15,Conditional Break,"i = 0
+while True:
+    if i == 4:
+        break
+    i += 1",Terminating,Development
+16,Finite Continue Loop,"i = 0
+while i < 5:
+    i += 1
+    continue",Terminating,Development
+17,Nested Finite Loops,"for i in range(3):
+    for j in range(2):
+        print(i, j)",Terminating,Development
+18,Infinite Nested Loop,"while True:
+    for i in range(3):
+        print(i)",Non-Terminating,Development
+19,Variable Set to Zero,"x = 5
+while x > 0:
+    x = 0",Terminating,Development
+20,Variable Repeatedly Increased,"x = 2
+while x >= 2:
+    x += 3",Non-Terminating,Development
+21,Finite Equality Loop,"x = 3
+while x != 0:
+    x -= 1",Terminating,Development
+22,Infinite Equality Loop,"x = 1
+while x != 0:
+    x += 1",Non-Terminating,Development
+23,Zero Iteration While Loop,"x = 10
+while x < 5:
+    x += 1",Terminating,Development
+24,Finite For Loop With Break,"for i in range(10):
+    if i == 3:
+        break",Terminating,Development
+25,Constant False Loop,"while 0:
+    print('Never runs')",Terminating,Development
